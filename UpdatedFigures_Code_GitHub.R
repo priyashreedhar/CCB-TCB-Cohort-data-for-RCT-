@@ -3,11 +3,16 @@
 # 1. Reported barriers to coordination
 # 2. Reported benefits of increased coordination
 
+# Data source:
+# openICPSR Project 246952 (Version V3)
+# https://doi.org/10.3886/E246952V3
+# Download Dataset_ToUpload.xlsx and place it in the /data folder.
+
 library(tidyverse)
 library(readxl)
 
 # Read the sheet
-df <- read_excel("/Users/priya/Documents/Work /Cohort and RCT coordination/Updated_Dataset.xlsx")
+df <- read_excel("data/Dataset_ToUpload.xlsx")
 
 # Shared status levels and color palette
 all_status <- c("CCB", "TCB", "Both", "None")
